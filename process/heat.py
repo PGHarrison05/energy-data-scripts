@@ -13,33 +13,33 @@ def get_eligibility04(data):
     day_night_cut = data.get("BC_CutoffTemps")[0] if data.get("BC_CutoffTemps",None) else None
 
     if burner_type == "TBD":
-        return Eligibility.UNSURE
+        return Eligibility.UNSURE.value
     elif burner_type in ["Hi","Other","N/A"]:
-        return Eligibility.NOT_ELIGIBLE
+        return Eligibility.NOT_ELIGIBLE.value
     elif mod_works  == "TBD":
-        return Eligibility.UNSURE
+        return Eligibility.UNSURE.value
     elif mod_works == "N/A":
-        return Eligibility.NOT_ELIGIBLE
+        return Eligibility.NOT_ELIGIBLE.value
     elif mod_works == "No":
-        return Eligibility.ELIGIBLE
+        return Eligibility.ELIGIBLE.value
     elif burner_set == "TBD":
-        return Eligibility.UNSURE
+        return Eligibility.UNSURE.value
     elif burner_set == "N/A":
-        return Eligibility.NOT_ELIGIBLE
+        return Eligibility.NOT_ELIGIBLE.value
     elif burner_set == "No":
-        return Eligibility.ELIGIBLE
+        return Eligibility.ELIGIBLE.value
     elif day_night_adj == "TBD":
-        return Eligibility.UNSURE
+        return Eligibility.UNSURE.value
     elif day_night_adj == "N/A":
-        return Eligibility.NOT_ELIGIBLE
+        return Eligibility.NOT_ELIGIBLE.value
     elif day_night_adj == "No":
-        return Eligibility.ELIGIBLE
+        return Eligibility.ELIGIBLE.value
     elif day_night_cut == "TBD":
-        return Eligibility.UNSURE
+        return Eligibility.UNSURE.value
     elif day_night_cut in ["N/A","Yes"]:
-        return Eligibility.NOT_ELIGIBLE
+        return Eligibility.NOT_ELIGIBLE.value
     elif day_night_cut == "No":
-        return Eligibility.ELIGIBLE
+        return Eligibility.ELIGIBLE.value
     
     
 
