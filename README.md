@@ -1,6 +1,6 @@
-# Ross-Scripts
+# Energy Data Automation
 
-A set of scripts for ross energy scope of work report automation
+A set of scripts for energy audit scope of work report
  
 ## Running Main Script
 
